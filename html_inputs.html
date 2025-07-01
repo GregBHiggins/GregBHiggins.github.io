@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Styled HTML Input Types Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f7f7f7;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+    }
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    input[type="range"] {
+      width: 100%;
+    }
+    .hidden-note {
+      font-style: italic;
+      color: #777;
+    }
+    .button-wrapper {
+      display: flex;
+      gap: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>HTML Input Types — Styled Demo</h1>
+
+<table>
+  <tr>
+    <th>Input Type</th>
+    <th>Description</th>
+    <th>Rendered Example</th>
+  </tr>
+
+  <tr><!---->
+    <td><code>text</code></td>
+    <td>Single-line text input</td>
+    <td><input type="text" placeholder="Enter text"></td>
+  </tr>
+
+  <tr><!---->
+    <td><code>password</code></td>
+    <td>Hides typed characters</td>
+    <td><input type="password" placeholder="enter your password"></td>
+  </tr>
+
+  <tr><!---->
+    <td><code>email</code></td>
+    <td>Validates email format</td>
+    <td><input type="email" placeholder="example@mail.com"></td>
+  </tr>
+
+  <tr><!---->
+    <td><code>number</code></td>
+    <td>Numeric input with min/max</td>
+    <td><input type="number" min="0" max="10" placeholder="0-10"></td>
+  </tr>
+
+  <tr><!---->
+    <td><code>checkbox</code></td>
+    <td>Multiple selections</td>
+    <td>
+      <label><input type="checkbox" checked> Choice A</label>
+      <label><input type="checkbox"        > Choice B</label>
+      <label><input type="checkbox" checked> Choice C</label>
+   </td>
+  </tr>
+
+  <tr><!---->
+    <td><code>radio</code></td>
+    <td>Single choice in group</td>
+    <td>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+    </td>
+  </tr>
+
+  <tr><!---->
+    <td><code>submit</code></td>
+    <td>Submit the form</td>
+    <td><input type="submit" value="Submit"></td>
+  </tr>
+
+  <tr><!---->
+    <td><code>reset</code></td>
+    <td>Reset form values</td>
+    <td><input type="reset" value="Reset"></td>
+  </tr>
+
+  <tr><!---->
+    <td><code>button</code></td>
+    <td>Custom button (JavaScript)</td>
+    <td><input type="button" value="Click Me" onclick="alert('Hello!')"></td>
+  </tr>
+
+  <tr><!---->
+    <td><code>date</code></td>
+    <td>Select a calendar date</td>
+    <td><input type="date"></td>
+  </tr>
+
+  <tr><!---->
+    <td><code>time</code></td>
+    <td>Select time</td>
+    <td><input type="time"></td>
+  </tr>
+
+  <tr><!---->
+    <td><code>color</code></td>
+    <td>Choose a color</td>
+    <td><input type="color"></td>
+  </tr>
+
+  <tr><!---->
+    <td><code>file</code></td>
+    <td>Upload a file</td>
+    <td><input type="file"></td>
+  </tr>
+
+  <tr><!---->
+    <td><code>range</code></td>
+    <td>Slider for numeric range</td>
+    <td><input type="range" min="0" max="100"></td>
+  </tr>
+
+  <tr><!---->
+    <td><code>hidden</code></td>
+    <td>Invisible input</td>
+    <td>
+      <input type="hidden" name="userID" value="123">
+      <span class="hidden-note">Not visible to the user</span>
+    </td>
+  </tr>
+
+  <tr><!---->
+    <td><code>tel</code></td>
+    <td>Telephone input</td>
+    <td><input type="tel" placeholder="123-456-7890"></td>
+  </tr>
+
+  <tr><!---->
+    <td><code>url</code></td>
+    <td>Website address input</td>
+    <td><input type="url" placeholder="https://example.com"></td>
+  </tr>
+
+</table>
+
+</body>
+
+</html>
